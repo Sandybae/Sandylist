@@ -8,20 +8,22 @@ import Footer from "@/comps/Footer";
 export default function Home() {
   return (
     <div>
-      <h1>Homepage</h1>
-      <p>
+      <h1 className={styles.title}>Homepage</h1>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nihil.
         Commodi accusamus omnis, nobis vitae tenetur quia error ea, nisi
         reprehenderit eveniet perferendis eum voluptatem aspernatur quo
         consequatur excepturi dolorum!
       </p>
-      <p>
+      <p className={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa impedit
         distinctio, molestias quisquam recusandae a eum reiciendis suscipit rem
         tempora. Quidem quaerat ipsa nemo ducimus soluta sit accusantium
         voluptatum aliquid.
       </p>
-      <Link href="/sandy">See Queens Listing</Link>
+      <Link className={styles.btn} href="/sandy">
+        See Queens Listing
+      </Link>
     </div>
   );
 }
