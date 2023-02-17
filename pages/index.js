@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/comps/Navbar";
 import Footer from "@/comps/footer";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function Home() {
         tempora. Quidem quaerat ipsa nemo ducimus soluta sit accusantium
         voluptatum aliquid.
       </p>
+      <Link href="/sandy">See Queens Listing</Link>
       <Footer />
     </div>
   );
