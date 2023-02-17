@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/sandy.module.css";
 
 export const getStaticProps = async () => {
@@ -14,11 +15,13 @@ const Sandy = ({ queens }) => {
     <div>
       <h1>All Queens</h1>
       {queens.map((queen) => (
-        <div key={queen.id}>
-          <a className={styles.single}>
-            <h3>{queen.name}</h3>
-          </a>
-        </div>
+        <Link
+          href={"/sandy/" + queen.id}
+          key={queen.id}
+          className={styles.single}
+        >
+          <h3>{queen.name}</h3>
+        </Link>
       ))}
     </div>
   );
